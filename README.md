@@ -1,6 +1,6 @@
 # VersionRAG
 
-VersionRAG membantu mahasiswa dan sivitas akademika menemukan informasi yang akurat dari dokumen dan regulasi kampus yang versinya sering berubah.
+VersionRAG memudahkan mahasiswa mencari aturan kampus terbaru tanpa bingung dengan versi lama.
 
 > Gagasan ini terinspirasi dari topik VersionRAG pada skripsi Alghifari Rasyid Zola angkatan 2022.
 
