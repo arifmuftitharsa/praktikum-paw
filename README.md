@@ -1,6 +1,6 @@
 # VersionRAG
 
-VersionRAG adalah asisten tanya jawab untuk dokumen akademik kampus yang selalu mengikuti versi terbaru.
+VersionRAG membantu mahasiswa dan sivitas akademika menemukan informasi yang akurat dari dokumen dan regulasi kampus yang versinya sering berubah.
 
 > Gagasan ini terinspirasi dari topik VersionRAG pada skripsi Alghifari Rasyid Zola angkatan 2022.
 
