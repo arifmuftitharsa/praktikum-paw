@@ -5,13 +5,13 @@ Repositori : https://github.com/arifmuftitharsa/praktikum-paw
 
 ## 1. Lingkungan Pengembangan
 
-| Komponen | Versi |
-|---|---|
-| Sistem Operasi | Windows 11 (build 10.0.26200.0) |
-| Node.js | v24.19.0 |
-| npm | 11.17.0 |
-| Git | 2.55.0.windows.3 |
-| Visual Studio Code | 1.139.0 |
+| Komponen           | Versi                           |
+| ------------------ | ------------------------------- |
+| Sistem Operasi     | Windows 11 (build 10.0.26200.0) |
+| Node.js            | v24.19.0                        |
+| npm                | 11.17.0                         |
+| Git                | 2.55.0.windows.3                |
+| Visual Studio Code | 1.139.0                         |
 
 ## 2. Alur Kerja Git
 
@@ -44,13 +44,13 @@ Penyelesaian dilakukan melalui Merge Editor bawaan Visual Studio Code, yang mena
 
 Tabel 9. Lembar kerja pengamatan HTTP
 
-| No | URL | Metode | Kode Status | Content-Type | Header Lain yang Diamati |
-|---|---|---|---|---|---|
-| 1 | http://localhost:3000/ | GET | 200 | text/html; charset=utf-8 | Cache-Control: no-cache, must-revalidate; Remote Address: [::1]:3000 |
-| 2 | http://localhost:3000/halaman-tidak-ada | GET | 404 | text/html; charset=utf-8 | Remote Address: [::1]:3000 |
-| 3 | turbopack-_08bm286_.js (dari localhost) | GET | 200 | application/javascript; charset=UTF-8 | Etag, Last-Modified |
-| 4 | http://github.com (curl) | HEAD | 301 | - | Location: https://github.com/ |
-| 5 | https://developer.mozilla.org (dengan cache) | GET | 200 (from memory cache) | text/css | Cache-Control: public, max-age=31536000 |
+| No  | URL                                          | Metode | Kode Status             | Content-Type                          | Header Lain yang Diamati                                             |
+| --- | -------------------------------------------- | ------ | ----------------------- | ------------------------------------- | -------------------------------------------------------------------- |
+| 1   | http://localhost:3000/                       | GET    | 200                     | text/html; charset=utf-8              | Cache-Control: no-cache, must-revalidate; Remote Address: [::1]:3000 |
+| 2   | http://localhost:3000/halaman-tidak-ada      | GET    | 404                     | text/html; charset=utf-8              | Remote Address: [::1]:3000                                           |
+| 3   | turbopack-_08bm286_.js (dari localhost)      | GET    | 200                     | application/javascript; charset=UTF-8 | Etag, Last-Modified                                                  |
+| 4   | http://github.com (curl)                     | HEAD   | 301                     | -                                     | Location: https://github.com/                                        |
+| 5   | https://developer.mozilla.org (dengan cache) | GET    | 200 (from memory cache) | text/css                              | Cache-Control: public, max-age=31536000                              |
 
 ![DevTools localhost:3000](img/modul-01-http-1.png)
 ![DevTools halaman tidak ada](img/modul-01-http-2.png)
@@ -119,8 +119,8 @@ Saat menyelesaikan konflik pada Bagian 3, proses merge diselesaikan melalui tomb
 
 Alat yang dipakai: Claude Sonnet 5 di claude.ai, dan Claude Code Sonnet 5 di Claude Code Desktop.
 
-| No | Untuk apa | Prompt/perintah utama | Bagian yang saya pakai | Cara saya verifikasi |
-|---|---|---|---|---|
-| 1 | Cek struktur folder dan riwayat Git | Minta Claude Code melakukan audit tanpa mengubah apa pun, untuk melihat folder mana yang terhubung ke repositori GitHub praktikum-paw dan checkpoint mana yang sudah ada jejaknya di Git | Hasil audit dipakai sebagai panduan urutan pengerjaan Bagian E | Saya jalankan ulang sendiri git status, git log --oneline --graph, dan git branch -a di terminal, hasilnya cocok dengan laporan Claude Code |
-| 2 | Menulis README.md | Minta Claude Code menulis ulang README dengan kalimat deskripsi yang saya tentukan sendiri, gaya bahasa santai | Struktur dan susunan kalimat README | Saya baca ulang seluruh isinya, lalu jalankan git diff README.md sebelum commit untuk memastikan tidak ada bagian tak diinginkan |
-| 3 | Bimbingan mengerjakan Modul 1 | Tanya jawab langkah demi langkah untuk Bagian A sampai H, termasuk penjelasan konsep Git dan cara membaca header HTTP di DevTools | Penjelasan konsep dipakai untuk menyusun bagian Analisis di atas | Saya bandingkan penjelasannya dengan isi Modul 1 dan cek langsung di DevTools serta terminal saya sendiri |
+| No  | Untuk apa                           | Prompt/perintah utama                                                                                                                                                                    | Bagian yang saya pakai                                           | Cara saya verifikasi                                                                                                                        |
+| --- | ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Cek struktur folder dan riwayat Git | Minta Claude Code melakukan audit tanpa mengubah apa pun, untuk melihat folder mana yang terhubung ke repositori GitHub praktikum-paw dan checkpoint mana yang sudah ada jejaknya di Git | Hasil audit dipakai sebagai panduan urutan pengerjaan Bagian E   | Saya jalankan ulang sendiri git status, git log --oneline --graph, dan git branch -a di terminal, hasilnya cocok dengan laporan Claude Code |
+| 2   | Menulis README.md                   | Minta Claude Code menulis ulang README dengan kalimat deskripsi yang saya tentukan sendiri, gaya bahasa santai                                                                           | Struktur dan susunan kalimat README                              | Saya baca ulang seluruh isinya, lalu jalankan git diff README.md sebelum commit untuk memastikan tidak ada bagian tak diinginkan            |
+| 3   | Bimbingan mengerjakan Modul 1       | Tanya jawab langkah demi langkah untuk Bagian A sampai H, termasuk penjelasan konsep Git dan cara membaca header HTTP di DevTools                                                        | Penjelasan konsep dipakai untuk menyusun bagian Analisis di atas | Saya bandingkan penjelasannya dengan isi Modul 1 dan cek langsung di DevTools serta terminal saya sendiri                                   |
