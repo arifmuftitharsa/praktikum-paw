@@ -1,3 +1,5 @@
+import Bagian from "@/components/Bagian";
+
 const fokus = [
   {
     judul: "AI Agent Engineering",
@@ -30,9 +32,8 @@ export default function Beranda() {
         </p>
       </section>
 
-      <section id="fitur" aria-labelledby="judul-fitur">
-        <h2 id="judul-fitur">Fokus Saya</h2>
-        <ul className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <Bagian id="fitur" judul="Fokus Saya">
+        <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {fokus.map((f) => (
             <li key={f.judul}>
               <article className="h-full rounded-lg border p-6">
@@ -42,7 +43,7 @@ export default function Beranda() {
             </li>
           ))}
         </ul>
-      </section>
+      </Bagian>
 
       <div className="grid gap-8 lg:grid-cols-[2fr_1fr]">
         <section aria-labelledby="judul-cara">
@@ -65,9 +66,8 @@ export default function Beranda() {
         </aside>
       </div>
 
-      <section id="kontak" aria-labelledby="judul-kontak">
-        <h2 id="judul-kontak">Hubungi Saya</h2>
-        <form className="mt-4 grid max-w-xl gap-4">
+      <Bagian id="kontak" judul="Hubungi Saya">
+        <form className="grid max-w-xl gap-4">
           <div className="flex flex-col gap-1">
             <label htmlFor="nama" className="font-medium">
               Nama lengkap
@@ -125,7 +125,7 @@ export default function Beranda() {
             Kirim
           </button>
         </form>
-      </section>
+      </Bagian>
     </main>
   );
 }
