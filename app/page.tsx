@@ -1,4 +1,5 @@
 import Bagian from "@/components/Bagian";
+import ItemTerbaru from "@/components/ItemTerbaru";
 
 const fokus = [
   {
@@ -43,6 +44,10 @@ export default function Beranda() {
             </li>
           ))}
         </ul>
+      </Bagian>
+
+      <Bagian id="terbaru" judul="Item Terbaru">
+        <ItemTerbaru />
       </Bagian>
 
       <div className="grid gap-8 lg:grid-cols-[2fr_1fr]">
